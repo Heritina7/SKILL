@@ -21,7 +21,6 @@ export default function Navbar() {
     { nom: 'EXPÉRIENCES', icon: <MdOutlineMilitaryTech />, lien:'Experience' },
     { nom: 'COMPÉTENCES', icon: <RiComputerLine />, lien:'Competence' },
     { nom: 'ACTIVITÉS', icon: <BsActivity />, lien:'Activite' },
-    { nom: 'BLOG', icon: <TbBrandBlogger />, lien:'Blog' },
     { nom: 'Contact', icon: <FiPhoneCall />, lien:'Contact' },
   ];
   const [ navOuvert, setNavOuvert ] = useState(true);

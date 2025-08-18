@@ -7,7 +7,6 @@ import Experience from "./pages/Experience";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Formation from "./pages/Formation";
-import Blog from "./pages/Blog";
 import Activite from "./pages/Activite";
 import { AiOutlinePaperClip } from "react-icons/ai"; 
 function App() {
@@ -29,7 +28,6 @@ function App() {
           <Route path="/Experience" element={<Experience/>}/>
           <Route path="/Formation" element={<Formation/>}/>
           <Route path="/Contact" element={<Contact/>}/>
-          <Route path="/Blog" element={<Blog/>}/>
           <Route path="/Activite" element={<Activite/>}/>
         </Routes>
       </main>
