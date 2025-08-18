@@ -91,7 +91,7 @@ export default function Contact() {
         <div className="w-full h-full bg-blue-500 flex justify-center items-center">
           <div className="w-full h-full">
           <iframe
-            src="https://www.google.com/maps?q=-18.886,47.535&z=15&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127415.47139278983!2d47.4529306!3d-18.8892727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e8bba1f4a73%3A0x38beaeebacfd1a0!2sAmbohimangakely!5e0!3m2!1sfr!2smg!4v1692098712345!5m2!1sfr!2smg"
             width="100%"
             height="100%"
             allowFullScreen
