@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import rth from '../assets/rth.png';
 import { RiDoubleQuotesR } from "react-icons/ri"; 
 import { RiDoubleQuotesL } from "react-icons/ri"; 
@@ -48,11 +49,11 @@ export default function Navbar() {
   {/* Bandeau top contact */}
   <div className="flex items-center justify-between w-full h-12 bg-black px-4">
     <div className="flex gap-3 text-lg text-white">
-      <a href="#" className="hover:text-blue-400"><FaMapMarkerAlt /></a>
+      <p className="hover:text-blue-400"><FaMapMarkerAlt /></p>
       <a href="https://wa.me/0347791758" className="hover:text-blue-400"><FaWhatsapp /></a>
       <a href="mailto:randrianjafyheritina7@gmail.com" className="hover:text-blue-400"><FaEnvelope /></a>
       <a href="https://web.facebook.com/heritina.randrianjafy.2025" className="hover:text-blue-400"><FaFacebook /></a>
-      <a href="#" className="hover:text-blue-400"><FaPhone /></a>
+      <p className="hover:text-blue-400"><FaPhone /></p>
       <a href="www.linkedin.com/in/heritina-randrianjafy" className="hover:text-blue-400"><FaLinkedin /></a>
     </div>
     <div className="hidden lg:flex flex-row text-white text-sm xl:text-base">
@@ -75,7 +76,7 @@ export default function Navbar() {
     <section className={`fixed flex flex-col lg:flex-row items-center justify-center lg:justify-between w-full z-40 bg-green-700 transition-all duration-500 overflow-hidden ${navOuvert ? 'h-screen lg:h-20' : 'h-0 lg:h-20'}`}>
       {/* Logo */}
       <div className={`text-3xl text-white font-bold ml-5 lg:mt-0 ${navOuvert ? 'lg:static absolute left-5 top-5' : ''}`}>
-        <a href=""><img src={rth} alt="sary" srcset="" className='border border-white rounded-full w-12 h-12 hover:scale-150 duration-200' /></a>
+        <Link to="/Hom"><img src={rth} alt="sary" srcset="" className='border border-white rounded-full w-12 h-12 hover:scale-150 duration-200' /></Link>
       </div>
 
       {/* Liens de navigation */}

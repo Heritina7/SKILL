@@ -1,5 +1,5 @@
 import { BiXCircle } from "react-icons/bi"; 
-import { FaWhatsapp,FaMapMarkerAlt,FaEnvelope, FaFacebook,FaPhone,FaLinkedin} from "react-icons/fa";
+import { FaWhatsapp,FaEnvelope, FaFacebook,FaPhone,FaLinkedin} from "react-icons/fa";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
@@ -130,11 +130,11 @@ export default function Exp({ donner }) {
             {/* Footer modal */}
             <div className='h-[10%] bg-green-300 flex justify-between items-center p-3 border-t-4 border-green-700'> 
               <div className="flex gap-3 text-lg text-white">
-                <a href="#" className="hover:text-blue-700"><FaMapMarkerAlt /></a>
+                {/* <a href="#" className="hover:text-blue-700"><FaMapMarkerAlt /></a> */}
                 <a href="https://wa.me/0347791758" className="hover:text-blue-700"><FaWhatsapp /></a>
                 <a href="mailto:randrianjafyheritina7@gmail.com" className="hover:text-blue-700"><FaEnvelope /></a>
                 <a href="https://web.facebook.com/heritina.randrianjafy.2025" className="hover:text-blue-700"><FaFacebook /></a>
-                <a href="#" className="hover:text-blue-700"><FaPhone /></a>
+                <p className="hover:text-blue-700"><FaPhone /></p>
                 <a href="www.linkedin.com/in/heritina-randrianjafy" className="hover:text-blue-700"><FaLinkedin /></a>
               </div>
               <button

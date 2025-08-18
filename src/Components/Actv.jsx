@@ -34,11 +34,11 @@ export default function Actv({dataactivite}){
             </div>
             <div className='h-[10%] bg-green-500 flex justify-between items-center p-3'> 
                 <div className="flex gap-3 text-lg text-white">
-                    <a href="#" className="hover:text-blue-400"><FaMapMarkerAlt /></a>
+                    <p className="hover:text-blue-400"><FaMapMarkerAlt /></p>
                     <a href="https://wa.me/0347791758" className="hover:text-blue-400"><FaWhatsapp /></a>
                     <a href="mailto:randrianjafyheritina7@gmail.com" className="hover:text-blue-400"><FaEnvelope /></a>
                     <a href="https://web.facebook.com/heritina.randrianjafy.2025" className="hover:text-blue-400"><FaFacebook /></a>
-                    <a href="#" className="hover:text-blue-400"><FaPhone /></a>
+                    <p className="hover:text-blue-400"><FaPhone /></p>
                     <a href="www.linkedin.com/in/heritina-randrianjafy" className="hover:text-blue-400"><FaLinkedin /></a>
                 </div>
                 <div></div>

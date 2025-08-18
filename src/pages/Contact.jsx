@@ -1,7 +1,6 @@
-import pdp from '../assets/pdp.jpg';
 import fever from '../assets/icone/fever.png';
 import malt from '../assets/icone/malt.png';
-import web from '../assets/icone/web.png';
+// import web from '../assets/icone/web.png';
 import linkedin from '../assets/icone/linkedin.png';
 
 import { motion } from "framer-motion";
@@ -54,7 +53,7 @@ export default function Contact() {
                   <a href="www.linkedin.com/in/heritina-randrianjafy"><img src={linkedin} alt="Linkedin" srcset="" className=' w-12 h-12' /></a>
                   <a href="https://www.malt.fr/profile/heritinarandrianjafy"><img src={malt} alt="malt" srcset="" className=' w-12 h-12' /></a>
                   <a href="https://www.fiverr.com/heritina7/buying?source=avatar_menu_profile"><img src={fever} alt="feverr" srcset="" className='w-12 h-12' /></a>
-                  <a href=""><img src={web} alt="web" srcset="" className='rounded-full w-12 h-12' /></a>
+                  {/* <a href="#"><img src={web} alt="web" srcset="" className='rounded-full w-12 h-12' /></a> */}
                 </motion.div>
               </div>
               <div className="flex flex-col justify-center items-center">

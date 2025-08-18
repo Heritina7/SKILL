@@ -1,5 +1,5 @@
 // import projet from "../assets/test.png"
-import projet1 from "../assets/pdp.jpg"
+// import projet1 from "../assets/pdp.jpg"
 // import video1 from "../assets/Video/video.mp4"
 
 const donner = [
