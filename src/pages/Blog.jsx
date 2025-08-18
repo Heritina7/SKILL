@@ -1,4 +1,3 @@
-import pdp from '../assets/pdp.jpg';
 import { BsFillSendFill } from "react-icons/bs"; 
 import { BiDownArrowCircle } from "react-icons/bi"; 
 import { CgPathDivide } from "react-icons/cg"; 
