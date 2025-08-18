@@ -1,0 +1,50 @@
+import projet1 from "../assets/pdp.jpg"
+const donner = [
+    {
+        id: 1,
+        titre: "Developpement Web",
+        date:"2025",
+        type:"STAND'ART",
+        resum:"resumé1",
+        detail: "Création et développement web chez STAND’ART Prestataire de service",
+        detail1:"",
+        image: projet1,
+    },
+    {
+        id: 2,
+        titre: "Monitoring téléphonique",
+        date:"",
+        type:"NPAKADIN (Stage)",
+        detail: "Création application web et mise en place équipement chez NP AKADIN-Création d’une application de monitoring d’appel téléphonique fixe  avec python Django et SGBD MySQL.-Installation et mise en place équipement VDI,administration réseaux et système en utilisant Activity Directory",
+        detail1:"",
+        image: projet1,
+    },
+    {
+        id: 3,
+        titre: "Application Web",
+        date:"",
+        type:"TP",
+        detail: "Création application web pour une point de vente pour une magasin avec react.js et django",
+        detail1:"",
+        image: projet1,
+    },
+    {
+        id: 4,
+        titre: "Suivi de Tâche",
+        date:"",
+        type:"TP",
+        detail: "Application Web en Python Django et MySQL sur le thème suivi des tâches des clients d'une entreprise.",
+        detail1:"",
+        image: projet1,
+    },
+    {
+        id: 5,
+        titre: "Suivi de Tâche",
+        date:"",
+        type:"TP",
+        detail: "Application Web en Python Django et MySQL sur le thème suivi des tâches des clients d'une entreprise.",
+        detail1:"",
+        image: projet1,
+    },
+];
+export default donner;
