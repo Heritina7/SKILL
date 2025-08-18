@@ -4,7 +4,7 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 import { RiDoubleQuotesL } from "react-icons/ri"; 
 import { FiPhoneCall } from "react-icons/fi";  
 import { BsActivity } from "react-icons/bs"; 
-import { TbBrandBlogger } from "react-icons/tb";
+// import { TbBrandBlogger } from "react-icons/tb";
 import { RiComputerLine } from "react-icons/ri"; 
 import { BiBrain } from "react-icons/bi"; 
 import { MdOutlineMilitaryTech } from "react-icons/md"; 
