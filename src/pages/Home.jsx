@@ -35,10 +35,10 @@ export default function Home() {
           exit={{opacity: 0, x: 100}}
           transition={{duration: 1.5}}
           className="h-[50%] w-full items-center justify-center overflow-auto flex lg:space-y-5 flex-col border-b border-black">    
-              <h1 className="lg:text-5xl text-2xl">RANDRIANJAFY</h1>
-              <h1 className="lg:text-3xl text-xl">Heritina</h1>
-              <h1 className='lg:text-5xl text-2xl font-bold flex flex-col lg:flex-row'><span>Developpeur Web</span><span className="text-center ml-2">Full Stack</span></h1>
-              <h1 className="lg:text-3xl font-bold text-xl">React.js / Django</h1>
+              <h1 className="lg:text-6xl text-2xl">RANDRIANJAFY</h1>
+              <h1 className="lg:text-4xl text-xl">Heritina</h1>
+              <h1 className='lg:text-6xl text-2xl font-bold flex flex-col lg:flex-row'><span>Developpeur Web</span><span className="text-center ml-2">Full Stack</span></h1>
+              <h1 className="lg:text-4xl font-bold text-xl">React.js / Django</h1>
         </motion.div>
         <motion.div 
           initial={{opacity: 0, x: 600}}
@@ -46,7 +46,7 @@ export default function Home() {
           exit={{opacity: 0, x: 100}}
           transition={{duration: 1.5}}
           className="h-[50%] w-full lg:p-10 flex flex-col items-center">
-          <h5 className='lg:p-24 lg:text-xl text-lg p-3'>Je suis un Développeur Web Freelance, passionné par la création de solution digitales modernes et performantes. Je conçois des sites et application web sur mesure, alliant design soigné, rapidité et sécurité. Grâce à ma maîtrise du frontend avec React et du backend avec Django, j'offre des projets complets, optimisés pour tous les appareils, et prêts à booster la visibilité et la croissance de mes clients.
+          <h5 className='lg:p-24 lg:text-2xl text-xl p-3'>Je suis un Développeur Web Freelance, passionné par la création de solution digitales modernes et performantes. Je conçois des sites et application web sur mesure, alliant design soigné, rapidité et sécurité. Grâce à ma maîtrise du frontend avec React et du backend avec Django, j'offre des projets complets, optimisés pour tous les appareils, et prêts à booster la visibilité et la croissance de mes clients.
           </h5>         
         </motion.div>
       </div>

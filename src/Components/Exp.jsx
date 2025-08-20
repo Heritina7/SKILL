@@ -18,10 +18,11 @@ function Carousel({ images }) {
   return (
     <div className="relative w-full h-full flex items-center justify-center bg-black rounded-lg overflow-hidden">
       <img
-        src={images[current]}
-        alt={`slide-${current}`}
-        className="w-full h-full object-cover"
-      />
+  src={images[current]}
+  alt={`slide-${current}`}
+  className="w-full max-h-[500px] object-cover"
+/>
+
 
       {/* Bouton précédent */}
       <button
@@ -44,7 +45,7 @@ function Carousel({ images }) {
 
 export default function Exp({ donner }) {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [ survol , setSurvol ] = useState(true);
   return (
     <div>       
       {/* Carte expérience */}
@@ -79,25 +80,37 @@ export default function Exp({ donner }) {
         </div>
 
         {/* Image cliquable */}
-        <motion.div 
-          initial={{opacity: 0, x: 600}}
-          animate={{opacity: 1, x: 0 }}
-          exit={{opacity: 0, x: 100}}
-          transition={{duration: 2}}
-          className='lg:w-[50%] w-full relative h-full'
-        >
-          <img
-            src={donner.image}
-            alt={donner.titre}
-            onClick={() => setMenuOpen(true)}
-            className='border-l-2 border-green-700 w-full h-full absolute rounded-tl-none rounded-bl-none rounded-2xl cursor-pointer'
-          />
-        </motion.div>
+       <motion.div 
+  initial={{opacity: 0, x: 600}}
+  animate={{opacity: 1, x: 0 }}
+  exit={{opacity: 0, x: 100}}
+  transition={{duration: 2}}
+  className='lg:w-[50%] w-full relative h-full group'
+>
+  {/* Image */}
+  <img
+    src={donner.image}
+    alt={donner.titre}
+    onClick={() => setMenuOpen(true)}
+     onMouseEnter = {()=>setSurvol(true)} 
+     onMouseLeave = {()=>setSurvol(false)}
+    className='border-l-2 border-green-700 transition-all duration-500 w-full h-full relative rounded-tl-none rounded-bl-none rounded-2xl cursor-pointer'
+  />
+
+  {/* Texte au survol */}
+  {survol && <div className="absolute inset-0 flex z-40 items-center justify-center left-0 top-0 w-1/2 h-1/2 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+    <span className="bg-black/60 text-white px-4 py-2 rounded-lg border border-white text-lg">
+      Cliquez pour plus de détails
+    </span>
+  </div>}
+</motion.div>
+
+
       </motion.div>  
 
       {/* Modal avec carousel */}
       {menuOpen && (
-        <nav className="bg-white border-2 border-green-700 bottom-1 left-40 w-[80%] h-[75%] text-white overflow-auto fixed rounded-xl z-50">
+        <nav className="bg-white border-2 border-green-700 bottom-1 left-40 w-[80%] h-[80%] text-white overflow-auto fixed rounded-xl z-50">
           <div className="flex flex-col h-full w-full">
             {/* Header modal */}
             <div className='h-[10%] bg-green-200 flex flex-row justify-between text-black border-b-4 border-green-700 items-center'>
@@ -116,13 +129,13 @@ export default function Exp({ donner }) {
               </div>
 
               {/* Description */}
-              <div className="w-[50%] bg-gray-50 text-black flex flex-col overflow-y-auto">
-                <div className="p-5 space-y-2">
-                  <p>{donner.description1}</p>
-                  <p>{donner.description2}</p>
-                  <p>{donner.description3}</p>
-                  <p>{donner.description4}</p>
-                  <p>{donner.description5}</p>
+              <div className="w-[50%] bg-gray-50 text-black flex flex-col justify-center items-center overflow-y-auto">
+                <div className="p-5 space-y-5">
+                  <p className="text-2xl">{donner.description1}</p>
+                  <p className="text-2xl">{donner.description2}</p>
+                  <p className="text-2xl">{donner.description3}</p>
+                  <p className="text-2xl">{donner.description4}</p>
+                  <p className="text-2xl">{donner.description5}</p>
                 </div>  
               </div>
             </div>

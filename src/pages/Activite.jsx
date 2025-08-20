@@ -15,7 +15,7 @@ export default function Activite()
             className="w-full flex items-center border-b-2 border-black justify-center">
              <h4 className='p-3'>MES DOMAINES D'ACTIVITÉS</h4>
         </motion.div>                            
-        <div className="grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-4 overflow-auto">
+        <div className="grid grid-cols-1 gap-6 p-8 sm:grid-cols-2 md:grid-cols-3 overflow-auto">
             {dataactivite.map(folio => (
                 < Actv key={folio.id} dataactivite={folio} />
             ))}

@@ -67,7 +67,7 @@ export default function Navbar() {
   {/* Navbar principale */}
   <div className="transition-all duration-500 ease-in-out">
     {/* Bouton menu hamburger (mobile uniquement) */}
-    <section className={`absolute right-5 top-4 lg:hidden text-blue-500 cursor-pointer text-3xl transition-all duration-500 ${navOuvert ? 'hidden' : ''}`}>
+    <section className={`absolute right-5 top-4 lg:hidden text-blue-500 cursor-pointer text-4xl transition-all duration-500 ${navOuvert ? 'hidden' : ''}`}>
       <AiOutlineMenu onClick={() => setNavOuvert(true)} />
     </section>
 

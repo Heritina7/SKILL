@@ -29,7 +29,7 @@ export default function Contact() {
                 animate={{opacity: 1, x: 0 }}
                 exit={{opacity: 0, x: 100}}
                 transition={{duration: 1.5}}
-                className="flex flex-col lg:pl-48 pl-0 space-y-3">
+                className="flex flex-col lg:pl-72 pl-0 space-y-3">
                   <h6 className='flex flex-row lg:text-xl text-lg'><FiPhoneCall className='text-blue-500 mr-2' /><i className="fab fa-viber text-blue-500 mr-2"></i>+261 34 77 917 58</h6>
                   <h4 className='flex flex-row lg:text-xl text-lg'><BiMailSend className='text-blue-500 mr-2'/>Randrianjafyheritina7@gmail.com</h4>
                   <h4 className='flex flex-row lg:text-xl text-lg'><AiOutlineLinkedin className='text-blue-500 mr-2'/><CiFacebook className='text-blue-500 flex flex-row mr-2'/>Randrianjafy Heritina</h4>
