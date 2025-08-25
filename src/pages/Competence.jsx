@@ -33,14 +33,14 @@ export default function Competence() {
           transition={{duration: 1}}
           className="duration-500 hover:scale-110 bg-white border w-full h-full border-black flex flex-col justify-start items-center space-y-4">
           <DiIntellij className="text-2xl mt-4"/>
-          <h4 className='pb-3 border-b text-green-700 border-black hover:border-green-500'><span>Intellectuelle</span></h4>
+          <h2 className='pb-3 border-b text-green-700 border-black hover:border-green-500'><span>Intellectuelle</span></h2>
           <div className="flex flex-col justify-center items-center p-2 space-y-4">       
-            <h5>Sociable</h5>
-            <h5>Sens de la communication</h5>
-            <h5>Esprit d'appartenance</h5>
-            <h5>Esprit d'equipe</h5>
-            <h5> organisationnel</h5>
-            <h5>honnête</h5>
+            <h4>Sociable</h4>
+            <h4>Sens de la communication</h4>
+            <h4>Esprit d'appartenance</h4>
+            <h4>Esprit d'equipe</h4>
+            <h4> organisationnel</h4>
+            <h4>honnête</h4>
           </div>  
         </motion.div>
 
@@ -51,30 +51,30 @@ export default function Competence() {
           transition={{duration: 1}}
           className="duration-500 hover:scale-110 bg-white border w-full h-full border-black flex flex-col justify-start items-center space-y-3">
           <h3 className="text-2xl mt-3"><GrTechnology /></h3>
-          <h4 className='pb-3 border-b border-black text-green-700'>technique</h4>
+          <h2 className='pb-3 border-b border-black text-green-700'>Technique</h2>
           <div className="flex flex-col p-2 space-y-2">
             <div className="flex flex-col">
-              <h6 className="flex flex-row items-center"><span className="font-bold">Développement Frontend</span></h6>
-              <h5 className="flex flex-row items-center"><FaReact className="mr-1" /><span className=" text-sm">Réact.js et tailwindCss</span></h5>
-              <h5 className="flex flex-row items-center"><FaPython className="mr-1" /><span className=" text-sm">Tkinter</span></h5>
+              <h3 className="flex flex-row items-center"><span className="font-bold">Développement Frontend</span></h3>
+              <h4 className="flex flex-row items-center"><FaReact className="mr-1" /><span className="">Réact.js et tailwindCss</span></h4>
+              <h4 className="flex flex-row items-center"><FaPython className="mr-1" /><span className="">Tkinter</span></h4>
             </div>
             <div className="flex flex-col">
-              <h6 className="flex flex-row items-center"><span className="font-bold">Développement Backend</span></h6>
-              <h5 className="flex flex-row items-center"><FaPython className="mr-1"/><span className=" text-sm">Python  Django, RESTAPI</span></h5>
-              <h5 className="flex flex-row items-center"><FaReact className="mr-1"/><span className=" text-sm">Node.js </span></h5>
+              <h3 className="flex flex-row items-center"><span className="font-bold">Développement Backend</span></h3>
+              <h4 className="flex flex-row items-center"><FaPython className="mr-1"/><span className="">Python  Django, RESTAPI</span></h4>
+              <h4 className="flex flex-row items-center"><FaReact className="mr-1"/><span className="">Node.js </span></h4>
             </div>
             <div className="flex flex-col">
-              <h6 className="flex flex-row items-center"><span className="font-bold">UI/UX Design</span></h6>
-              <h5 className="flex flex-row items-center"><SiAntdesign className="mr-1" /><span className=" text-sm">Web designer</span></h5>
-              <h5 className="flex flex-row items-center"><MdDesignServices className="mr-1" /><span className=" text-sm">Graphiste/Illustrateur/Motion designer</span></h5>
+              <h4 className="flex flex-row items-center"><span className="font-bold">UI/UX Design</span></h4>
+              <h4 className="flex flex-row items-center"><SiAntdesign className="mr-1" /><span className="">Web designer</span></h4>
+              <h4 className="flex flex-row items-center"><MdDesignServices className="mr-1" /><span className="">Graphiste/Illustrateur/Motion designer</span></h4>
             </div>
             <div className="flex flex-col">
-              <h6 className="flex flex-row items-center"><span className="font-bold">SEO de base</span></h6>
-              <h5 className="flex flex-row items-center"><TbSeo className="mr-1" /><span className=" text-sm">Optimisation pour les moteurs de recherche</span></h5>
+              <h3 className="flex flex-row items-center"><span className="font-bold">SEO de base</span></h3>
+              <h4 className="flex flex-row items-center"><TbSeo className="mr-1" /><span className="">Optimisation pour les moteurs de recherche</span></h4>
             </div>
             <div className="flex flex-col">
-              <h6 className="flex flex-row items-center"><span className="font-bold">Gestion de projets freelance</span></h6>
-              <h5 className="flex flex-row items-center"><SiFreelancer className="mr-1" /><span className=" text-sm">Communication,délais,livrables</span></h5>
+              <h3 className="flex flex-row items-center"><span className="font-bold">Gestion de projets freelance</span></h3>
+              <h4 className="flex flex-row items-center"><SiFreelancer className="mr-1" /><span className="">Communication,délais,livrables</span></h4>
             </div>
           </div>
         </motion.div>
@@ -85,14 +85,14 @@ export default function Competence() {
           transition={{duration: 1}}
           className="duration-200 hover:scale-110 bg-white border w-full h-full border-black flex flex-col justify-start items-center space-y-4">
           <FaAmericanSignLanguageInterpreting className="text-2xl mt-4"/>
-          <h4 className='pb-3 border-b border-black text-green-700'>languistique</h4>
+          <h2 className='pb-3 border-b border-black text-green-700'>languistique</h2>
           <div className="flex flex-col p-2 space-y-4">
             <h5 className="flex flex-row items-center">
-              <img src={mlg} alt="" srcset="" className="mr-1 border border-black" /><span>Langue maternel </span></h5>
+              <img src={mlg} alt="" srcset="" className="mr-1 border border-black" /><span className="text-2xl">Langue maternel </span></h5>
             <h5 className="flex flex-row items-center">
-              <img src={frs} alt="" srcset="" className="mr-1" /><span>Courant</span></h5>
+              <img src={frs} alt="" srcset="" className="mr-1" /><span className="text-2xl">Courant</span></h5>
             <h5 className="flex flex-row items-center">
-              <img src={ang} alt="" srcset="" className="w-5 h-8 mr-1" /><span>Intermediaire</span></h5>
+              <img src={ang} alt="" srcset="" className="w-5 h-8 mr-1" /><span className="text-2xl">Intermediaire</span></h5>
           </div>
         </motion.div>
       </div>

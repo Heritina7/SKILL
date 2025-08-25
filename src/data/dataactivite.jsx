@@ -1,10 +1,16 @@
 // import projet from "../assets/test.png"
-// import projet1 from "../assets/pdp.jpg"
+import projet from "../assets/activite/MOZIKA.png"
 const dataactivite = [
-    // {
-    //     id: 1,
-    //     image: projet,
-    // },
+     {
+         id: 1,
+         titre:"Mozika",
+         image: projet,
+         description1: "",
+         description2: "",
+         description3: "",
+         description4: "",
+         description5: "",
+     },
     // {
     //     id: 2,
     //     image: projet1,

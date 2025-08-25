@@ -35,7 +35,7 @@ export default function Carousel() {
         {/* Bouton précédent */}
         <button
           onClick={prevSlide}
-          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-200"
+          className="absolute left-2 top-1/2 -translate-y-1/2 p-3 rounded-full shadow hover:bg-gray-200"
         >
           ◀
         </button>

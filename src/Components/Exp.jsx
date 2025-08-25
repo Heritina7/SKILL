@@ -27,17 +27,17 @@ function Carousel({ images }) {
       {/* Bouton précédent */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 p-2 text-black rounded-full shadow hover:bg-white"
       >
-        ◀
+        ◁
       </button>
 
       {/* Bouton suivant */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow hover:bg-white"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 p-2 text-black rounded-full shadow hover:bg-white"
       >
-        ▶
+        ▷
       </button>
     </div>
   );
@@ -45,7 +45,7 @@ function Carousel({ images }) {
 
 export default function Exp({ donner }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [ survol , setSurvol ] = useState(true);
+  const [ survol , setSurvol ] = useState(false);
   return (
     <div>       
       {/* Carte expérience */}
@@ -57,7 +57,7 @@ export default function Exp({ donner }) {
         className="flex lg:flex-row flex-col h-full rounded-2xl border-2 border-green-800"
       >
         <div className='lg:w-[50%] w-full flex flex-col'>
-          <motion.h5 
+          <motion.h3
             initial={{opacity: 0, x: 0}}
             animate={{opacity: 1, x: 0 }}
             exit={{opacity: 0, x: 100}}
@@ -65,16 +65,16 @@ export default function Exp({ donner }) {
             className='bg-gray-100 border-b-2 border-green-700 rounded-tl-xl p-2'
           >
             {donner.titre}
-          </motion.h5>
+          </motion.h3>
           <motion.p 
             initial={{opacity: 0, x: -600}}
             animate={{opacity: 1, x: 0 }}
             exit={{opacity: 0, x: 100}}
             transition={{duration: 2}}
-            className='p-5 flex flex-col'
+            className='p-5 flex flex-col text-xl'
           >
-            <h5>{donner.date}</h5>
-            <h5>{donner.type}</h5>
+            <h3>{donner.date}</h3>
+            <h3>{donner.type}</h3>
             {donner.detail}
           </motion.p>
         </div>
@@ -110,7 +110,7 @@ export default function Exp({ donner }) {
 
       {/* Modal avec carousel */}
       {menuOpen && (
-        <nav className="bg-white border-2 border-green-700 bottom-1 left-40 w-[80%] h-[80%] text-white overflow-auto fixed rounded-xl z-50">
+        <nav className="bg-white border-2 border-green-700 m-3 lg:left-40 left-1 lg:top-48 top-24 lg:w-[80%] lg:h-[80%] h-[90%] text-white overflow-auto fixed rounded-xl z-50">
           <div className="flex flex-col h-full w-full">
             {/* Header modal */}
             <div className='h-[10%] bg-green-200 flex flex-row justify-between text-black border-b-4 border-green-700 items-center'>
@@ -122,32 +122,31 @@ export default function Exp({ donner }) {
             </div>
 
             {/* Contenu modal */}
-            <div className='h-[80%] overflow-auto flex flex-row'>
+            <div className='lg:h-[80%] h-full overflow-auto flex flex-col lg:flex-row'>
               {/* Carousel */}
-              <div className='w-[50%] h-full relative'>
+              <div className='lg:w-[50%] relative'>
                 <Carousel images={donner.carouselImages} />  
               </div>
 
               {/* Description */}
-              <div className="w-[50%] bg-gray-50 text-black flex flex-col justify-center items-center overflow-y-auto">
+              <div className="lg:w-[50%] bg-gray-50 text-black flex flex-col justify-center items-center overflow-y-auto">
                 <div className="p-5 space-y-5">
-                  <p className="text-2xl">{donner.description1}</p>
-                  <p className="text-2xl">{donner.description2}</p>
-                  <p className="text-2xl">{donner.description3}</p>
-                  <p className="text-2xl">{donner.description4}</p>
-                  <p className="text-2xl">{donner.description5}</p>
+                  <p className="lg:text-2xl">{donner.description1}</p>
+                  <p className="lg:text-2xl">{donner.description2}</p>
+                  <p className="lg:text-2xl">{donner.description3}</p>
+                  <p className="lg:text-2xl">{donner.description4}</p>
+                  <p className="lg:text-2xl">{donner.description5}</p>
                 </div>  
               </div>
             </div>
 
             {/* Footer modal */}
             <div className='h-[10%] bg-green-300 flex justify-between items-center p-3 border-t-4 border-green-700'> 
-              <div className="flex gap-3 text-lg text-white">
-                {/* <a href="#" className="hover:text-blue-700"><FaMapMarkerAlt /></a> */}
+              <div className="flex gap-3 text-4xl items-center text-blue-600">
                 <a href="https://wa.me/0347791758" className="hover:text-blue-700"><FaWhatsapp /></a>
                 <a href="mailto:randrianjafyheritina7@gmail.com" className="hover:text-blue-700"><FaEnvelope /></a>
                 <a href="https://web.facebook.com/heritina.randrianjafy.2025" className="hover:text-blue-700"><FaFacebook /></a>
-                <p className="hover:text-blue-700"><FaPhone /></p>
+                <p className="mt-2 hover:text-blue-700"><FaPhone /></p>
                 <a href="www.linkedin.com/in/heritina-randrianjafy" className="hover:text-blue-700"><FaLinkedin /></a>
               </div>
               <button

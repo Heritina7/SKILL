@@ -2,6 +2,7 @@
 // import projet1 from "../assets/pdp.jpg"
 // import video1 from "../assets/Video/video.mp4"
 // projet monitoring 
+import monitoring from "../assets/experience/monitoring/monitoring.png"
 import boky1 from "../assets/experience/monitoring/boky1.png"
 import boky2 from "../assets/experience/monitoring/boky2.png"
 import boky3 from "../assets/experience/monitoring/boky3.png"
@@ -39,7 +40,7 @@ const donner = [
     date: "Mai 2024 - juillet 2024",
     type: "Stage en entreprise NP AKADIN",
     detail: "Participation au installation equipement informatique. Creation application web, monitoring telephonique.",
-    image: boky2,
+    image: monitoring,
     carouselImages: [boky1, boky2, boky3, boky4, boky5, boky6, boky7],
     description1: "Mise en place du frontend et backend avec Django.",
     description2: "Création d’un système d’authentification par session.",

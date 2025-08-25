@@ -1,10 +1,10 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import rth from '../assets/rth.png';
 import { RiDoubleQuotesR } from "react-icons/ri"; 
 import { RiDoubleQuotesL } from "react-icons/ri"; 
 import { FiPhoneCall } from "react-icons/fi";  
 import { BsActivity } from "react-icons/bs"; 
-// import { TbBrandBlogger } from "react-icons/tb";
 import { RiComputerLine } from "react-icons/ri"; 
 import { BiBrain } from "react-icons/bi"; 
 import { MdOutlineMilitaryTech } from "react-icons/md"; 
@@ -12,8 +12,18 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsXLg } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from 'react';
 import { FaWhatsapp,FaMapMarkerAlt,FaEnvelope, FaFacebook,FaPhone,FaLinkedin} from "react-icons/fa";
+function useMobile (){
+  const[ isMobile,setIsMobile ]= useState(window.innerWidth < 1000);
+  useEffect(()=>
+  {
+    const handleResize = () => setIsMobile(window.innerWidth < 1000);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  return isMobile;
+
+}
 export default function Navbar() {
   const NavLinks = [
     { nom: 'Accueil', icon: <AiOutlineHome />, lien:'' },
@@ -42,12 +52,13 @@ export default function Navbar() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+  const isMobile= useMobile(); 
 
   return (
     <div className="fixed z-50 flex flex-col w-full">
   {/* Bandeau top contact */}
   <div className="flex items-center justify-between w-full h-12 bg-black px-4">
-    <div className="flex gap-3 text-lg text-white">
+    <div className="flex gap-3 text-lg text-blue-500 relative top-2">
       <p className="hover:text-blue-400"><FaMapMarkerAlt /></p>
       <a href="https://wa.me/0347791758" className="hover:text-blue-400"><FaWhatsapp /></a>
       <a href="mailto:randrianjafyheritina7@gmail.com" className="hover:text-blue-400"><FaEnvelope /></a>
@@ -67,7 +78,7 @@ export default function Navbar() {
   {/* Navbar principale */}
   <div className="transition-all duration-500 ease-in-out">
     {/* Bouton menu hamburger (mobile uniquement) */}
-    <section className={`absolute right-5 top-4 lg:hidden text-blue-500 cursor-pointer text-4xl transition-all duration-500 ${navOuvert ? 'hidden' : ''}`}>
+    <section className={`absolute right-5 top-2 hover:text-white lg:hidden text-blue-500 cursor-pointer text-4xl transition-all duration-500 ${navOuvert ? 'hidden' : ''}`}>
       <AiOutlineMenu onClick={() => setNavOuvert(true)} />
     </section>
 
@@ -75,11 +86,15 @@ export default function Navbar() {
     <section className={`fixed flex flex-col lg:flex-row items-center justify-center lg:justify-between w-full z-40 bg-green-700 transition-all duration-500 overflow-hidden ${navOuvert ? 'h-screen lg:h-20' : 'h-0 lg:h-20'}`}>
       {/* Logo */}
       <div className={`text-3xl text-white font-bold ml-5 lg:mt-0 ${navOuvert ? 'lg:static absolute left-5 top-5' : ''}`}>
-        <Link to="/Hom"><img src={rth} alt="sary" srcset="" className='border border-white rounded-full w-12 h-12 hover:scale-150 duration-200' /></Link>
+        <Link to="/"><img src={rth} alt="sary" srcset="" className='border border-white rounded-full w-12 h-12 hover:scale-150 duration-200' /></Link>
       </div>
 
       {/* Liens de navigation */}
-      <nav className="flex flex-col items-center overflow-auto justify-center lg:flex-row lg:h-full lg:mt-0 w-full">
+      <nav 
+      onClick={() =>{
+        if (isMobile) setNavOuvert(false) 
+      }}
+      className="flex flex-col items-center overflow-auto justify-center lg:flex-row lg:h-full lg:mt-0 w-full">
         {NavLinks.map((link, index) => (
           <NavLink
             key={index}
