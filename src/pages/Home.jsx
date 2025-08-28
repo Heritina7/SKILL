@@ -1,13 +1,3 @@
-import { SiDjango } from "react-icons/si"; 
-import { FaPython } from "react-icons/fa"; 
-import { AiOutlineGithub } from "react-icons/ai"; 
-import { FaJs } from "react-icons/fa"; 
-import { FaNodeJs } from "react-icons/fa"; 
-import { FaReact } from "react-icons/fa"; 
-import { SiTailwindcss } from "react-icons/si"; 
-import { AiOutlineHtml5 } from "react-icons/ai"; 
-import { AiFillHtml5 } from "react-icons/ai"; 
-import { BiBrain } from "react-icons/bi"; 
 import { motion } from "framer-motion";
 import { RiDoubleQuotesR } from "react-icons/ri"; 
 import { RiDoubleQuotesL } from "react-icons/ri"; 
@@ -79,7 +69,7 @@ export default function Home() {
           animate={{opacity: 1, x: 0 }}
           exit={{opacity: 0, x: 100}}
           transition={{duration: 1.5}}
-          className="h-[10%] w-full lg:p-2 bg-gray-200 rounded-xl flex flex-col items-center shadow-[0_10px_20px_#1C242D] shadow-xl">
+          className="h-[10%] w-full lg:p-2 bg-gray-200 rounded-xl flex flex-col items-center shadow-[0_10px_20px_#1C242D]">
           <h5 className='lg:text-5xl text-xl p-1 flex-row flex space-x-4'>
             <img src={github} alt="" srcset="" className='transition-transform duration-300 hover:scale-125 rounded-xl w-10 h-10' />
             <img src={html} alt="" srcset="" className='rounded-xl w-10 h-10 transition-transform duration-300 hover:scale-125' />

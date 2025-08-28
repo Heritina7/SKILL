@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import rth from '../assets/rth.png';
-import { RiDoubleQuotesR } from "react-icons/ri"; 
-import { RiDoubleQuotesL } from "react-icons/ri"; 
 import { FiPhoneCall } from "react-icons/fi";  
 import { BsActivity } from "react-icons/bs"; 
 import { RiComputerLine } from "react-icons/ri"; 
@@ -13,7 +11,6 @@ import { BsXLg } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { FaWhatsapp,FaMapMarkerAlt,FaEnvelope, FaFacebook,FaPhone,FaLinkedin} from "react-icons/fa";
-import { AiOutlinePaperClip } from "react-icons/ai";
 function useMobile (){
   const[ isMobile,setIsMobile ]= useState(window.innerWidth < 1000);
   useEffect(()=>
@@ -101,14 +98,14 @@ export default function Navbar() {
       </nav>
         <div className="shadow bg-slate-500 right-20 relative rounded-3xl flex flex-row">
         <div className="flex gap-2 p-1 items-center text-2xl relative ml-2 mr-2">
-      <a className="text-white hover:text-slate-700"><FaMapMarkerAlt /></a>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127415.47139278983!2d47.4529306!3d-18.8892727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e8bba1f4a73%3A0x38beaeebacfd1a0!2sAmbohimangakely!5e0!3m2!1sfr!2smg!4v1692098712345!5m2!1sfr!2smg"className="text-white hover:text-slate-700"><FaMapMarkerAlt /></a>
       <a href="https://wa.me/0347791758" className="text-white hover:text-slate-700"><FaWhatsapp /></a>
       <a href="mailto:randrianjafyheritina7@gmail.com" className="text-white hover:text-slate-700"><FaEnvelope /></a>
-      <a href="https://web.facebook.com/heritina.randrianjafy.2025" className="text-white text-white hover:text-slate-700"><FaFacebook /></a>
-      <a className="hover:text-slate-700 text-white"><FaPhone /></a>
+      <a href="https://web.facebook.com/heritina.randrianjafy.2025" className="text-white hover:text-slate-700"><FaFacebook /></a>
+      <a href='https://wa.me/0347791758' className="hover:text-slate-700 text-white"><FaPhone /></a>
       <a href="www.linkedin.com/in/heritina-randrianjafy" className="hover:text-black text-white"><FaLinkedin /></a>
     </div>
-        <div className="hover:bg-blue-400 shadow-black hover:bg-yellow-500 hover:border-black hover:border rounded-full w-10 h-10 bg-blue-500 border-white border flex items-center justify-center">
+        <div className=" shadow-black hover:bg-yellow-500 hover:border-black hover:border rounded-full w-10 h-10 bg-blue-500 border-white border flex items-center justify-center">
         <h6 className="relative top-1 text-white">CV</h6>
       </div>     
       </div>
