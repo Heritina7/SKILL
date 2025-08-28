@@ -1,5 +1,4 @@
 import { SiAntdesign } from "react-icons/si"; 
-import { TbSeo } from "react-icons/tb"; 
 import { SiFreelancer } from "react-icons/si"; 
 import { motion } from "framer-motion";
 import { MdDesignServices } from "react-icons/md"; 

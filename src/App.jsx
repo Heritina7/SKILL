@@ -7,8 +7,7 @@ import Experience from "./pages/Experience";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Formation from "./pages/Formation";
-import Activite from "./pages/Activite";
-import { AiOutlinePaperClip } from "react-icons/ai"; 
+import Activite from "./pages/Activite"; 
 function App() {
   return (
     
