@@ -6,7 +6,7 @@ export default function Activite()
 {  
   // Affichage
   return(
-    <div className="container p-8 lg:py-40 py-10">
+    <div className="container p-8 lg:py-20 right-4 relative">
         <motion.div 
             initial={{opacity: 0, y: -600}}
             animate={{opacity: 1, y: 0 }}

@@ -15,7 +15,7 @@ import ang from '../assets/icone/ang.png';
 
 export default function Competence() {
   return (
-    <div className='container flex flex-col lg:h-screen lg:pt-32 pt-14 overflow-auto'>
+    <div className='container flex flex-col lg:h-screen lg:pt-20 overflow-auto'>
       <motion.div 
         initial={{opacity: 0, y: -600}}
         animate={{opacity: 1, y: 0 }}
@@ -34,17 +34,18 @@ export default function Competence() {
           className="duration-500 hover:scale-110 bg-white border w-full h-full border-black flex flex-col justify-start items-center space-y-4">
           <DiIntellij className="text-2xl mt-4"/>
           <h2 className='pb-3 border-b text-green-700 border-black hover:border-green-500'><span>Intellectuelle</span></h2>
-          <div className="flex flex-col justify-center items-center p-2 space-y-4">       
-            <h4>Sociable</h4>
-            <h4>Sens de la communication</h4>
-            <h4>Esprit d'appartenance</h4>
+          <div className="flex flex-col justify-center items-center p-2 space-y-4">
+            <h4>Autonomie</h4>
+            <h4>gestion de temps</h4>
+            <h4>sens des détails</h4>
             <h4>Esprit d'equipe</h4>
-            <h4> organisationnel</h4>
+            <h4> sens de l’organisation</h4>
+            <h4>esprit méthodique</h4>
             <h4>honnête</h4>
-          </div>  
+          </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{opacity: 0, y: 600}}
           animate={{opacity: 1, y: 0 }}
           exit={{opacity: 0, y: 100}}
@@ -54,27 +55,27 @@ export default function Competence() {
           <h2 className='pb-3 border-b border-black text-green-700'>Technique</h2>
           <div className="flex flex-col p-2 space-y-2">
             <div className="flex flex-col">
-              <h3 className="flex flex-row items-center"><span className="font-bold">Développement Frontend</span></h3>
-              <h4 className="flex flex-row items-center"><FaReact className="mr-1" /><span className="">Réact.js et tailwindCss</span></h4>
-              <h4 className="flex flex-row items-center"><FaPython className="mr-1" /><span className="">Tkinter</span></h4>
+              <h4 className="flex flex-row items-center"><span className="font-bold">Développement Frontend</span></h4>
+              <h5 className="flex flex-row items-center relative left-4"><FaReact className="mr-1" /><span className="">Réact.js et tailwindCss</span></h5>
+              <h5 className="flex flex-row items-center relative left-4"><FaPython className="mr-1" /><span className="">Tkinter</span></h5>
             </div>
             <div className="flex flex-col">
-              <h3 className="flex flex-row items-center"><span className="font-bold">Développement Backend</span></h3>
-              <h4 className="flex flex-row items-center"><FaPython className="mr-1"/><span className="">Python  Django, RESTAPI</span></h4>
-              <h4 className="flex flex-row items-center"><FaReact className="mr-1"/><span className="">Node.js </span></h4>
+              <h4 className="flex flex-row items-center"><span className="font-bold">Développement Backend</span></h4>
+              <h5 className="flex flex-row items-center relative left-4"><FaPython className="mr-1"/><span className="">Python  Django, RESTAPI</span></h5>
+              <h5 className="flex flex-row items-center relative left-4"><FaReact className="mr-1"/><span className="">Node.js </span></h5>
             </div>
             <div className="flex flex-col">
-              <h4 className="flex flex-row items-center"><span className="font-bold">UI/UX Design</span></h4>
-              <h4 className="flex flex-row items-center"><SiAntdesign className="mr-1" /><span className="">Web designer</span></h4>
-              <h4 className="flex flex-row items-center"><MdDesignServices className="mr-1" /><span className="">Graphiste/Illustrateur/Motion designer</span></h4>
+              <h5 className="flex flex-row items-center"><span className="font-bold">UI/UX Design</span></h5>
+              <h5 className="flex flex-row items-center relative left-4"><SiAntdesign className="mr-1" /><span className="">Web designer</span></h5>
+              <h5 className="flex flex-row items-center relative left-4"><MdDesignServices className="mr-1" /><span className="">Graphiste/Illustrateur/Motion designer</span></h5>
             </div>
             <div className="flex flex-col">
-              <h3 className="flex flex-row items-center"><span className="font-bold">SEO de base</span></h3>
-              <h4 className="flex flex-row items-center"><TbSeo className="mr-1" /><span className="">Optimisation pour les moteurs de recherche</span></h4>
+              <h4 className="flex flex-row items-center"><span className="font-bold">SEO de base</span></h4>
+              <h5 className="flex flex-row items-center"><span className="relative left-4">Optimisation pour les moteurs de recherche</span></h5>
             </div>
             <div className="flex flex-col">
-              <h3 className="flex flex-row items-center"><span className="font-bold">Gestion de projets freelance</span></h3>
-              <h4 className="flex flex-row items-center"><SiFreelancer className="mr-1" /><span className="">Communication,délais,livrables</span></h4>
+              <h4 className="flex flex-row items-center"><span className="font-bold">Gestion de projets freelance</span></h4>
+              <h5 className="flex flex-row items-center relative left-4"><SiFreelancer className="mr-1" /><span className="">Communication,délais,livrables</span></h5>
             </div>
           </div>
         </motion.div>

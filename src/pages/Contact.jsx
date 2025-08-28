@@ -13,7 +13,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export default function Contact() {
   return (
-    <div className='flex lg:flex-row flex-col lg:h-screen lg:pt-32 pt-14 overflow-auto'>
+    <div className='flex lg:flex-row flex-col lg:h-screen lg:pt-20 pt-14 overflow-auto'>
       <div className="lg:w-[50%] w-full h-full overflow-auto flex flex-col lg:border-r lg:border-black">          
             <motion.h3 
               initial={{opacity: 0, y: -600}}

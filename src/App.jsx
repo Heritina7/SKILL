@@ -13,12 +13,6 @@ function App() {
   return (
     
     <Router>
-      <div className="hover:bg-green-400 shadow-black hover:border-black hover:border rounded-full w-20 h-20 bg-green-600 fixed bottom-5 right-5 flex items-center justify-center">
-        <AiOutlinePaperClip className="text-3xl" />
-        <h6 className="relative top-2 text-white">CV</h6>
-      </div>
-    
-      
       <Navbar />
       <div className='flex flex-col min-h-screen'>
       <main className='flex-grow'>

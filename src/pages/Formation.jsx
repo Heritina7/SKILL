@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Formation() {
   return (
-    <div className='container flex flex-col lg:h-screen lg:pt-32 pt-14 overflow-auto'>
+    <div className='container flex flex-col lg:h-screen lg:pt-20 pt-14 overflow-auto'>
       <motion.div 
               initial={{opacity: 0, y: -600}}
               animate={{opacity: 1, y: 0 }}
@@ -46,16 +46,6 @@ export default function Formation() {
           <div className="w-[30%]">LYPARS</div>
         </motion.div>
 
-        <motion.div 
-          initial={{opacity: 0, x: 600}}
-          animate={{opacity: 1, x: 0 }}
-          exit={{opacity: 0, x: 100}}
-          transition={{duration: 1}}
-          className="hover:bg-green-100 duration-500 w-full p-3 border-2 border-green-500 bg-gray-100 hover:scale-x-125 hover:border-green-500 hover:border rounded-xl justify-around flex flex-row">
-          <div className="w-[30%]">2015- 2016</div>
-          <div className="w-[40%]">BEPC</div>
-          <div className="w-[30%]">Lycée Arcade</div>
-        </motion.div>
       </div>
     </div>
   )
