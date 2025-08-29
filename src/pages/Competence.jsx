@@ -8,7 +8,6 @@ import { FaAmericanSignLanguageInterpreting } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr"; 
 import { DiIntellij } from "react-icons/di"; 
 import React from 'react'
-import mlg from '../assets/icone/mlg.png';
 import frs from '../assets/icone/frs.png';
 import ang from '../assets/icone/ang.png';
 
@@ -87,8 +86,6 @@ export default function Competence() {
           <FaAmericanSignLanguageInterpreting className="text-2xl mt-4"/>
           <h2 className='pb-3 border-b border-black text-green-700'>languistique</h2>
           <div className="flex flex-col p-2 space-y-4">
-            <h5 className="flex flex-row items-center">
-              <img src={mlg} alt="" srcset="" className="mr-1 border border-black" /><span className="text-2xl">Langue maternel </span></h5>
             <h5 className="flex flex-row items-center">
               <img src={frs} alt="" srcset="" className="mr-1" /><span className="text-2xl">Courant</span></h5>
             <h5 className="flex flex-row items-center">

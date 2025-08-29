@@ -71,32 +71,32 @@ export default function Navbar() {
 
       {/* Liens de navigation */}
       <nav 
-      onClick={() =>{
-        if (isMobile) setNavOuvert(false) 
-      }}
-      className="flex flex-col items-center overflow-auto justify-center lg:flex-row lg:h-full lg:mt-0 w-full">
-        {NavLinks.map((link, index) => (
-          <NavLink
-            key={index}
-            to={`/${link.lien}`}
-            className={({ isActive }) =>
-              `relative flex items-center gap-2 p-4 text-white text-xl no-underline cursor-pointer rounded-xl hover:bg-slate-500 group ${
-                isActive ? 'bg-slate-600' : ''
-              }`
-            }
-          >
-            <span className="text-xl">{link.icon}</span>
-            <span className="font-semibold">{link.nom}</span>
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all duration-500 group-hover:w-full"></span>
-          </NavLink>
-        ))}
+  onClick={() => { if (isMobile) setNavOuvert(false) }}
+  className="flex flex-col items-center overflow-auto justify-center lg:flex-row lg:h-full lg:mt-0 w-full"
+>
+  {NavLinks.map((link, index) => (
+    <NavLink
+      key={index}
+      to={`/${link.lien}`}
+      className={({ isActive }) =>
+        `relative flex items-center gap-2 p-4 text-white text-xl no-underline cursor-pointer rounded-xl hover:bg-slate-500 group
+        ${isActive ? 'bg-slate-600' : ''} ${isMobile ? 'w-full justify-start px-8' : ''}`
+      }
+    >
+      <span className="text-xl">{link.icon}</span>
+      <span className="font-semibold">{link.nom}</span>
+      {/* Barre de hover */}
+      <span className="absolute bottom-0 left-0 h-1 w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+    </NavLink>
+  ))}
 
-        {/* Bouton fermeture menu mobile */}
-        <div className={`text-3xl text-white cursor-pointer lg:hidden ${navOuvert ? 'absolute top-5 right-5' : ''}`}>
-          <BsXLg onClick={() => setNavOuvert(false)} />
-        </div>   
-      </nav>
-        <div className="shadow bg-slate-500 right-20 relative rounded-3xl flex flex-row">
+  {/* Bouton fermeture menu mobile */}
+  <div className={`text-3xl text-white cursor-pointer lg:hidden ${navOuvert ? 'absolute top-5 right-5' : ''}`}>
+    <BsXLg onClick={() => setNavOuvert(false)} />
+  </div>   
+</nav>
+
+        <div className="shadow bg-slate-500 relative lg:right-20 right-30 lg:top-0 top-32 relative rounded-3xl flex flex-row">
         <div className="flex gap-2 p-1 items-center text-2xl relative ml-2 mr-2">
       <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127415.47139278983!2d47.4529306!3d-18.8892727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e8bba1f4a73%3A0x38beaeebacfd1a0!2sAmbohimangakely!5e0!3m2!1sfr!2smg!4v1692098712345!5m2!1sfr!2smg"className="text-white hover:text-slate-700"><FaMapMarkerAlt /></a>
       <a href="https://wa.me/0347791758" className="text-white hover:text-slate-700"><FaWhatsapp /></a>

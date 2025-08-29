@@ -87,7 +87,7 @@ export default function Contact() {
           
         
       </div>
-      <div className="lg:w-[50%] w-full h-full bg-blue-500">
+      <div className="lg:w-[50%] w-full h-full">
         <div className="w-full h-full bg-blue-500 flex justify-center items-center">
           <div className="w-full h-full">
           <iframe
