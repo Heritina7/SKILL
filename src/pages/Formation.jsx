@@ -31,7 +31,7 @@ export default function Formation() {
           transition={{duration: 1}}
         className="hover:bg-green-100 duration-500 w-full p-3 border-2 border-green-500 bg-gray-100 hover:scale-x-125 hover:border-green-500 hover:border rounded-xl justify-around flex flex-row">
           <div className="w-[30%]">2022- 2023</div>
-          <div className="w-[40%]">Arduino</div>
+          <div className="w-[40%]">Formation en Arduino</div>
           <div className="w-[30%]">TME</div>
         </motion.div>
 

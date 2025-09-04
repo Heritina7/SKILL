@@ -29,6 +29,7 @@ export default function Navbar() {
     { nom: 'EXPÉRIENCES', icon: <MdOutlineMilitaryTech />, lien:'Experience' },
     { nom: 'COMPÉTENCES', icon: <RiComputerLine />, lien:'Competence' },
     { nom: 'ACTIVITÉS', icon: <BsActivity />, lien:'Activite' },
+    { nom: 'SKILL', icon: <BsActivity />, lien:'http://rtheritina.netlify.app' },
     { nom: 'Contact', icon: <FiPhoneCall />, lien:'Contact' },
   ];
   const [ navOuvert, setNavOuvert ] = useState(true);

@@ -57,7 +57,7 @@ export default function Home() {
   }, [paused]);
 
   return (
-    <div className="lg:flex lg:flex-row lg:h-screen lg:pt-20 relative lg:bottom-0 bottom-10 overflow-auto flex-col">
+    <div className="lg:flex lg:flex-row lg:h-screen bg-gray-100 lg:pt-20 relative lg:bottom-0 bottom-10 overflow-auto flex-col">
       
       {/* Partie gauche : PDP et citation */}
       <div className="lg:w-[40%] w-full h-[40%] lg:h-full flex flex-col justify-center">
